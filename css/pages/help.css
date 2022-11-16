@@ -1,0 +1,56 @@
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main section form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+main section form .form-group {
+    width: 100%;
+}
+
+main section form .form-group input, main section form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 1rem;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    -moz-appearance: none !important;
+    height: 45px;
+    border: 1px solid black;
+    padding: 0.5rem;
+    border-radius: .4rem;
+    display: block;
+}
+
+main section form .form-group textarea {
+    height: 100px;
+    resize: none;
+}
+
+main section form input[type="submit"], main section form input[type="reset"] {
+    width: 45%;
+    margin-top: 10px;
+    margin-inline: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    color: var(--color-active);
+    background-color: var(--color-theme);
+    font-weight: bold;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+main section #error_message, main section #success_message {
+    width: 70%;
+    margin-top: 20px;
+}

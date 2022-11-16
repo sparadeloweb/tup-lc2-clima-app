@@ -1,0 +1,37 @@
+#form-city-list form select{
+    padding: 10px;
+    font-size: 1rem;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    -moz-appearance: none !important;
+    height: 45px;
+    width: 300px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAUCAMAAACtdX32AAAAdVBMVEUAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhMdQaAAAAJ3RSTlMAAAECAwQGBwsOFBwkJTg5RUZ4eYCHkJefpaytrsXGy8zW3+Do8vNn0bsyAAAAYElEQVR42tXROwJDQAAA0Ymw1p9kiT+L5P5HVEi3qJn2lcPjtIuzUIJ/rhIGy762N3XaThqMN1ZPALsZPEzG1x8LrFL77DHBnEMxBewz0fJ6LyFHTPL7xhwzWYrJ9z22AqmQBV757MHfAAAAAElFTkSuQmCC);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    padding: 0.5rem;
+    border-radius: .4rem;
+    text-transform: capitalize;
+    
+}
+
+#form-city-list form button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: var(--color-theme);
+    color: #5df2d6;
+    font-weight: bold;
+    border: none;
+    border-radius: .4rem;
+}
+
+#section-weather-result .card {
+    display: none;
+    text-align: center;
+    margin-top: 40px;
+    padding: 30px;
+    color: blackwhite;
+    box-shadow: 0px 0px 10px black;
+    border-radius: .8rem;
+}

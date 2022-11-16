@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*CAMBIO DE FUENTE PQ NO ME RECONOCIA LUCIDA*/
+
+:root {
+/* Declaro variables CSS con colores principales */
+    --color-theme: #00594c;
+    --color-active: #5df2d6;
+    --color-back-active: #04957d;
+    --color-gradient: linear-gradient(to right, var(--color-theme),
+    var(--color-back-active));
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+button, a {
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--color-gradient);
+    border-radius: 0px 0px 20px 20px;
+    border-bottom: 3px solid var(--color-active);
+}
+
+header h1 {
+    margin: 20px 0px 10px 0px;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+nav li {
+    flex: 0 0 auto;
+}
+
+nav li a {
+    display: block;
+    padding: 16px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--color-active);
+}
+
+nav li.current-page a {
+    color: var(--color-theme);
+    background-color: var(--color-active);
+    pointer-events: none;
+    border-radius: 10px 10px 0px 0px;
+}
+
+main {
+    margin-top: 120px;
+    overflow: auto;
+    padding: 16px;
+    padding-bottom: 60px;
+    height: calc(100% - 120px);
+}
+
+main h2 {
+    padding: 30px 0px 0px 0px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+
+h1 > img {
+    width: 70px;
+    vertical-align: middle;
+}
+
+h2 {
+    color: var(--color-theme);
+    margin: 16px 0;
+    text-align: center;
+}
+
+h3 {
+    color: var(--color-theme);
+    margin: 8px 0;
+}
+
+main section {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    background: var(--color-gradient);
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    border-top: 3px solid var(--color-active);
+    padding-bottom: 10px;
+}
+
+footer p {
+    font-size: 1rem;
+    color: white;
+}
+
+main p {
+    margin-bottom: 16px;
+}
+
+#messages_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+#success_message, #error_message, #warning_message {
+    display: none;
+    padding: 10px;
+    color: white;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: .4rem;
+    text-align: center;
+    background-color: #28a745;
+}
+
+#warning_message {
+    background-color: #ffc107;
+}
+
+#error_message {
+    background-color: #dc3545;
+}
+
+#cargando-text {
+    display: none;
+    text-align: center;
+    width: 100%;
+}
+
+/* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
+@media (min-width: 400px) {
+    main {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+    

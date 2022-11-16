@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clima APP - Por Santiago Paradelo</title>
+        <!-- Estilos CSS -->
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/pages/index.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>
+                <span>Clima App</span>
+            </h1>
+
+            <nav>
+                <ul>
+                    <li class="current-page">
+                        <a href="/">Clima</a>
+                    </li>
+                    <li>
+                        <a href="/add-city.html">Agregar Ciudad</a>
+                    </li>
+                    <li>
+                        <a href="/help.html">Ayuda</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Contenido principal de la página -->
+        <main>
+            <h2>El Clima Ahora</h2>
+            <section id="form-city-list">
+            <!-- Sección donde se debe colocar el formulario, con el select y el botón de consultar -->
+            <form>
+                <select id="city-choose">
+                </select>
+                <button type="button" onclick="fetchCityWeather()">Consultar</button>
+            </form>
+            </section>
+            <h2 id="cargando-text">Cargando...</h2>
+            <section id="section-weather-result">
+            <!-- Sección donde se debe mostrar el clima de la ciudad -->
+                <div class="card" id="info-card">
+                    <h3 id="cityname">Rosario</h3>
+                    <img src="http://openweathermap.org/img/wn/01d@2x.png" />
+                    <p id="temp">Temperatura: 25.31°</p>
+                    <p id="sen-term">Sensación térmica: 24.65°</p>
+                    <p id="humedad">Humedad: 29%</p>
+                    <p id="vel-vient">Velocidad del viento: 4.63km/h</p>
+                    <p id="presion">Presión: 1011 P</p>
+                </div>
+            </section>
+            <div id="error_message">Error al consultar la ciudad. Verifique no tener seleccionada la primera opción.</div>
+        </main>
+
+        <footer>
+            <p>
+            Desarrollado con ♥ - LC2
+            </p>
+            <script defer src="js/common.js"></script>
+            <script defer src="js/pages/index.js"></script>
+        </footer>
+    </body>
+</html>

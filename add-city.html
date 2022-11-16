@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clima APP - Por Santiago Paradelo</title>
+        <!-- Estilos CSS -->
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/pages/add-city.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>
+                <span>Clima App</span>
+            </h1>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/">Clima</a>
+                    </li>
+                    <li class="current-page">
+                        <a href="/add-city.html">Agregar Ciudad</a>
+                    </li>
+                    <li>
+                        <a href="/help.html">Ayuda</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Contenido principal de la página -->
+        <main>
+            <h2>Agregar Ciudad</h2>
+            <section>
+                <form>
+                    <label for="city">Ingrese la ciudad a agregar: </label>
+                    <input type="text" name="city" id="city"/>
+                    <button type="button" onclick="addNewCityToLocalStorage(document.getElementById('city').value)">Agregar</button>
+                </form>
+                <h2 id="cargando-text">Cargando...</h2>
+                <div id="messages_wrapper">
+                    <div id="success_message">Ciudad agregada con éxito</div>
+                    <div id="warning_message">Error: La ciudad ingresada no se encuentra en la API o se produjo un error al consultar</div>
+                    <div id="error_message">La ciudad ingresada ya se encuentra almacenada</div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+            Desarrollado con ♥ - LC2
+            </p>
+            <script defer src="js/common.js"></script>
+            <script defer src="js/pages/add-city.js"></script>
+        </footer>
+    </body>
+</html>
